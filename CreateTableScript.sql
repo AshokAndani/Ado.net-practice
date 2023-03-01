@@ -1,8 +1,6 @@
 -- change the name of database if you have different DB
 use MyDatabase;
 
-DECLARE @db varchar(30) = 'MyDatabase';
-EXEC ('USE '+@db);
 IF (NOT EXISTS (SELECT * 
                  FROM INFORMATION_SCHEMA.TABLES 
                  WHERE TABLE_SCHEMA = 'dbo'
